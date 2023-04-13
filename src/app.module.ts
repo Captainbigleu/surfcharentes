@@ -4,13 +4,14 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { SkillsModule } from './skills/skills.module';
-/* import { AuthModule } from './auth/auth.module'; */
+import { AuthModule } from './auth/auth.module';
 import { CommentsModule } from './comments/comments.module';
 import { Comment } from './comments/entities/comment.entity';
 import { UsersModule } from './users/users.module';
 import { User } from './users/entities/user.entity';
 import { ArticlesModule } from './articles/articles.module';
 import { Article } from './articles/entities/article.entity';
+import { Skill } from './skills/entities/skill.entity';
 
 
 
@@ -30,6 +31,7 @@ import { Article } from './articles/entities/article.entity';
         Article,
         Comment,
         User,
+        Skill
       ],
       synchronize: true,
     }),
@@ -38,7 +40,8 @@ import { Article } from './articles/entities/article.entity';
     ArticlesModule,
     CommentsModule,
     UsersModule,
-    /* AuthModule, */
+    AuthModule,
+
   ],
   controllers: [AppController],
   providers: [AppService],

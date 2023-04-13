@@ -8,17 +8,15 @@ VERSION 1 :
 
 *** Visiteurs *** :
 
-- consulter la base de données des spots de surf en Charente-maritime (table ARTICLES) avec photos, accès au spot, qualité de la vague, type de fond, taille de la houle nécessaire, direction du vent nécessaire, marées, niveau de surf requis, dangers éventuels.
+- consulter la base de données des spots de surf en Charente-maritime (table ARTICLES) avec photos, note du spot, accès au spot, qualité de la vague, type de fond, taille de la houle nécessaire, direction du vent nécessaire, marées, niveau de surf requis, dangers éventuels.
 
 - consulter les commentaires déposés pour chaque article (table COMMENTAIRES).
 
 - s'enregistrer (table USERS).
 
-- barre de recherche pour tous les spots (table ARTICLES).
+- barre de recherche pour tous les spots (table ARTICLES) et discipline (table DISCIPLINE).
 
-- barre de recherche pour les spots par niveau de surf et/ou par discipline (table Discipline).
-
-- liens dans le footer vers les meilleurs site de prévisions météo, de choix de matériel etc.
+- liens dans le footer vers les meilleurs site de prévisions météo, de choix de matériel, reseaux sociaux etc.
 
 - 2 test unitaires (Test Driven Development).
 
@@ -30,9 +28,7 @@ VERSION 1 :
 
 - créer un profil avec : pseudo, homespot(article), discipline (niveau) (table USERS)
 
-- retrouver par barre de recherche des profils utilisateurs : pseudo, homespot, discipline, niveau (relation, fonctionnalité, requête).
-
-- poster des commentaires dans chaque article pour raconter ses sessions + liens vers photos + ratings par étoiles (table COMMENTAIRES).
+- poster des commentaires dans chaque article pour raconter ses sessions (table COMMENTAIRES).
 
 - contacter l'administrateur.
 
@@ -56,17 +52,23 @@ VERSION 1 :
 
 VERSION 2 :
 
+- le son des vagues.
+
 - possibilité pour les utilisateurs de mettre des liens vers des photos (table COMMENTAIRES).
 
 - système de notation des spots par les utilisateurs (table COMMENTAIRES).
 
+- retrouver par barre de recherche des profils utilisateurs : pseudo, homespot, discipline, niveau (relation, fonctionnalité, requête).
+
 - friendship pour les utilisateurs (table FRIENDSHIP).
+
+- barre de recherche pour les spots par niveau de surf et/ou par discipline (table Discipline).
 
 
 
 BONUS :
 
-- consulter la carte des spots de Charente-maritime avec lien cliquable qui redirige vers l'article correspondant.
+- consulter la carte des spots de Charente-maritime avec lien cliquable qui redirige vers l'article du spot correspondant.
 
 - géolocalisation pour tous (via LEAFLET).
 
@@ -77,23 +79,8 @@ BONUS :
 
 
 
-
-
-
 https://lucid.app/lucidchart/b50210b6-67be-441b-88a1-7cec0e4d3114/edit?invitationId=inv_5fa79540-757f-4d4c-9547-2d9c418e06c9
 https://lucid.app/lucidchart/b50210b6-67be-441b-88a1-7cec0e4d3114/edit?invitationId=inv_5fa79540-757f-4d4c-9547-2d9c418e06c9&page=0_0#
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
